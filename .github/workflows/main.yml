@@ -27,7 +27,7 @@ jobs:
         run: echo Y | XCOPY C:\GitHub_Actions\Contrast\Self_Hosted\Workspace\Contrast_Security\Contrast_Security\startup-tomcat-contrast.bat C:\ProgramData\Contrast\java
         #echo "No" | copy/-Y c:\source c:\Dest\
         
-        
+      #Running bat  
       - name: Run a bat file 
         if: ${{ env.CATALINA_HOME == 'C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43' }}
         run: |
