@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Move file
-        run: echo Y | XCOPY C:\Vulns\Self_Hosted\Workspace\Vulns\Vulns\startup-tomcat-contrast.bat C:\ProgramData\Contrast\java
+        run: echo Y | XCOPY C:\GitHub_Actions\Contrast\Self_Hosted\Workspace\Contrast_Security\Contrast_Security\startup-tomcat-contrast.bat C:\ProgramData\Contrast\java
         #echo "No" | copy/-Y c:\source c:\Dest\
         
         
