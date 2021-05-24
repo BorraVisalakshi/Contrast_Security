@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: self-hosted
+    env:
+      CATALINA_HOME: C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43
+    
+    steps:
+    
+      - name: Step-1 Checkout the code
+        uses: actions/checkout@v2
+        
+      - name: Move file
+        run: echo Y | XCOPY C:\Vulns\Self_Hosted\Workspace\Vulns\Vulns\startup-tomcat-contrast.bat C:\ProgramData\Contrast\java
+        #echo "No" | copy/-Y c:\source c:\Dest\
+        
+        
+      - name: Run a bat file 
+        #if: ${{ env.CATALINA_HOME == 'D:\apache-tomcat-7.0.108' }}
+        #shell: pwsh
+        run: |
+              cd C:\ProgramData\Contrast\java;
+              C:\ProgramData\Contrast\java\startup-tomcat-contrast.bat;
