@@ -16,6 +16,7 @@ jobs:
     runs-on: self-hosted
     env:
       CATALINA_HOME: C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43
+      JAVA_HOME: C:\Program Files\Java\jdk1.8.0_281
     
     steps:
     
