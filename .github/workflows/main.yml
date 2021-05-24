@@ -33,3 +33,6 @@ jobs:
         run: |
               cd C:\ProgramData\Contrast\java;
               .\startup-tomcat-contrast.bat;
+      
+      - name: Check 
+        run: echo "Done"
