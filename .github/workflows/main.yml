@@ -32,4 +32,4 @@ jobs:
         #shell: pwsh
         run: |
               cd C:\ProgramData\Contrast\java;
-              C:\ProgramData\Contrast\java\startup-tomcat-contrast.bat;
+              .\startup-tomcat-contrast.bat;
