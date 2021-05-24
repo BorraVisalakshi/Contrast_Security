@@ -29,7 +29,6 @@ jobs:
         
       - name: Run a bat file 
         if: ${{ env.CATALINA_HOME == 'C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43' }}
-        shell: bash
         run: |
               cd C:\ProgramData\Contrast\java;
               .\startup-tomcat-contrast.bat;
