@@ -32,8 +32,7 @@ jobs:
         if: ${{ env.CATALINA_HOME == 'C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43' }}
         run: |
               cd C:\ProgramData\Contrast\java;
-              set CATALINA_OPTS= "-javaagent:C:\ProgramData\Contrast\java\contrast.jar -Dcontrast.config.path=C:\ProgramData\Contrast\java\contrast_security.yaml";
-              call C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43\bin\startup.bat;
-      
+              C:\ProgramData\Contrast\java\startup-tomcat-contrast.bat;
+             
       - name: Check 
         run: echo "Done"
