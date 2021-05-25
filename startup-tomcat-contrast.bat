@@ -1,3 +1,3 @@
 set CATALINA_OPTS=%CATALINA_OPTS% -javaagent:%ProgramData%\Contrast\java\contrast.jar -Dcontrast.config.path=%ProgramData%\Contrast\java\contrast_security.yaml
 
-call C:\ProgramData\Contrast\java\apache-tomcat-10.0.6\apache-tomcat-10.0.6\bin\startup.bat
+call C:\Program Files\Apache Software Foundation\Tomcat 8.5\bin\startup.bat
