@@ -15,7 +15,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: self-hosted
     env:
-      CATALINA_HOME: C:\ProgramData\Contrast\java\apache-tomcat-10.0.6\apache-tomcat-10.0.6
+      CATALINA_HOME: C:\ProgramData\Contrast\java\apache-tomcat-10.0.6
       JAVA_HOME: C:\Program Files\Java\jdk1.8.0_281
     
     steps:
@@ -32,7 +32,7 @@ jobs:
       - name: Run a bat file 
        # if: ${{ env.CATALINA_HOME == 'C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43' }}
         run: |
-               .\startup-tomcat-contrast.bat
+               C:\ProgramData\Contrast\java\apache-tomcat-10.0.6\bin\startup.bat
              
       - name: Check 
         run: echo "Done"
