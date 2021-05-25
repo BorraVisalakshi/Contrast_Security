@@ -40,7 +40,7 @@ jobs:
       - name: Step-4 Zip the Source code
         uses: papeloto/action-zip@v1
         with:
-          dest: BatFile.zip
+          dest: BAT.zip
           
   #Verify the Zip folder
       - name: Step-5 Verify Directory
@@ -48,4 +48,4 @@ jobs:
       
   #Move the Zip to D: drive
       - name: Step-6 Move Directory to D drive
-        run: move BatFile.zip D:\Actions
+        run: move BAT.zip D:\Actions
