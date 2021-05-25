@@ -23,16 +23,16 @@ jobs:
       - name: Step-1 Checkout the code
         uses: actions/checkout@v2
         
-     # - name: Move file
-      #  run: echo Y | XCOPY C:\GitHub_Actions\Contrast\Self_Hosted\Workspace\Contrast_Security\Contrast_Security\startup-tomcat-contrast.bat C:\ProgramData\Contrast\java
+      - name: Move file
+        run: echo Y | XCOPY C:\GitHub_Actions\Contrast\Self_Hosted\Workspace\Contrast_Security\Contrast_Security\startup-tomcat-contrast.bat C:\ProgramData\Contrast\java
         #echo "No" | copy/-Y c:\source c:\Dest\
         
       #Running bat  
       - name: Run a bat file 
        # if: ${{ env.CATALINA_HOME == 'C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43' }}
         run: |
-               
-                .\startup-tomcat-contrast.bat
+               cd C:\ProgramData\Contrast\java
+               C:\ProgramData\Contrast\java\startup-tomcat-contrast.bat
              
       - name: Check 
         run: echo "Done"
