@@ -37,15 +37,3 @@ jobs:
       - name: Check 
         run: echo "Done"
         
-      - name: Step-4 Zip the Source code
-        uses: papeloto/action-zip@v1
-        with:
-          dest: BAT.zip
-          
-  #Verify the Zip folder
-      - name: Step-5 Verify Directory
-        run: dir
-      
-  #Move the Zip to D: drive
-      - name: Step-6 Move Directory to D drive
-        run: move BAT.zip D:\Actions
