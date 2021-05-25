@@ -34,10 +34,12 @@ jobs:
         run: |
                C:\ProgramData\Contrast\java\startup-contrast-tomcat.bat
       
-      - name: Sleep for 60 seconds
-        uses: jakejarvis/wait-action@master
+     
+      - name: Sleep for 10s
+        uses: juliangruber/sleep-action@v1
         with:
-         time: '60s'
+          time: 60s
+          
       - name: Check 
         run: echo "Done"
         
