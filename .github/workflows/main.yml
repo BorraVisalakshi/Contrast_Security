@@ -32,7 +32,7 @@ jobs:
       - name: Run a bat file 
        # if: ${{ env.CATALINA_HOME == 'C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43' }}
         run: |
-               C:\ProgramData\Contrast\java\contrast-weblogic.bat
+               C:\ProgramData\Contrast\java\startup-contrast-tomcat.bat
              
       - name: Check 
         run: echo "Done"
