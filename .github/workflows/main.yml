@@ -33,7 +33,11 @@ jobs:
        # if: ${{ env.CATALINA_HOME == 'C:\ProgramData\Contrast\java\apache-tomcat-9.0.43\apache-tomcat-9.0.43' }}
         run: |
                C:\ProgramData\Contrast\java\startup-contrast-tomcat.bat
-             
+      
+      - name: Sleep for 60 seconds
+        uses: jakejarvis/wait-action@master
+        with:
+         time: '60s'
       - name: Check 
         run: echo "Done"
         
