@@ -33,7 +33,7 @@ jobs:
         run: |
               cd C:\ProgramData\Contrast\java;
               
-              C:\ProgramData\Contrast\java\apache-tomcat-10.0.6\apache-tomcat-10.0.6\bin\startup.bat
+              C:\ProgramData\Contrast\java\startup-tomcat-contrast.bat
              
       - name: Check 
         run: echo "Done"
