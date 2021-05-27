@@ -38,7 +38,7 @@ jobs:
       - name: Sleep for 60s time
         uses: juliangruber/sleep-action@v1
         with:
-          time: 60s
+          time: 90s
           
       - name: Check 
         run: echo "Done"
