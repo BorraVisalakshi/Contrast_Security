@@ -35,7 +35,7 @@ jobs:
                C:\ProgramData\Contrast\java\startup-contrast-tomcat.bat
       
      
-      - name: Sleep for 10s
+      - name: Sleep for 60s
         uses: juliangruber/sleep-action@v1
         with:
           time: 60s
